@@ -1,0 +1,54 @@
+<p>
+    <mat-toolbar color="primary">
+      <button mat-button [matMenuTriggerFor]="animals"><mat-icon>menu</mat-icon></button>
+        <mat-menu #animals="matMenu">
+          <button mat-menu-item [matMenuTriggerFor]="attv">Atividades</button>
+          
+        </mat-menu>
+
+      <mat-menu #attv="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="pb">Primeiro Bimestre</button>
+        <button mat-menu-item [matMenuTriggerFor]="sb">Segundo Bimestre</button>
+        <button mat-menu-item [matMenuTriggerFor]="tb">Terceiro Bimestre</button>
+        <button mat-menu-item [matMenuTriggerFor]="qb">Quarto Bimestre</button>
+      </mat-menu>
+
+      <mat-menu #pb="matMenu">
+        <button mat-menu-item>-</button>
+        <button mat-menu-item>-</button>
+        <button mat-menu-item>-</button>
+        <button mat-menu-item>-</button>
+        <button mat-menu-item>-</button>
+      </mat-menu>
+
+      <mat-menu #sb="matMenu">
+        <button mat-menu-item>-</button>
+        <button mat-menu-item>-</button>
+        <button mat-menu-item>-</button>
+        <button mat-menu-item>-</button>
+      </mat-menu>
+
+      <mat-menu #tb="matMenu">
+        <button mat-menu-item>-</button>
+        <button mat-menu-item>-</button>
+        <button mat-menu-item>-</button>
+        <button mat-menu-item>-</button>
+        <button mat-menu-item>-</button>
+      </mat-menu>
+
+      <mat-menu #qb="matMenu">
+        <button mat-menu-item>-</button>
+
+      </mat-menu>
+
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </p>
+  
